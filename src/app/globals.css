@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #0A192F;
+  --color-brand-light-navy: #112240;
+  --color-brand-lightest-navy: #233554;
+  --color-brand-teal: #64FFDA;
+  --color-brand-light: #CCD6F6;
+  --color-brand-slate: #8892B0;
+  --color-brand-white: #E6F1FF;
+}
+
+:root {
+  --background: #0A192F;
+  --foreground: #CCD6F6;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-navy text-brand-light font-sans antialiased selection:bg-brand-teal/30 selection:text-brand-light;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    -webkit-font-smoothing: antialiased;
+    will-change: auto;
+  }
+  
+  section {
+    transform: translateZ(0);
+  }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0A192F;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #233554;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #64FFDA;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-brand-light-navy/70 backdrop-blur-md border border-brand-lightest-navy/50 rounded-xl shadow-[0_10px_30px_-15px_rgba(2,12,27,0.7)];
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-teal to-blue-400;
+  }
+}
