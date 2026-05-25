@@ -55,9 +55,24 @@ export default function CompanySection() {
               ))}
             </ul>
             
-            <div className="bg-brand-navy/50 border border-brand-teal/20 rounded-lg p-4 flex gap-4 items-center">
+            <div className="bg-brand-navy/50 border border-brand-teal/20 rounded-lg p-4 flex gap-4 items-center mb-6">
               <CheckCircle2 className="text-brand-teal flex-shrink-0" size={24} />
               <p className="text-brand-light text-sm italic">{company.highlight}</p>
+            </div>
+
+            <div className="w-full h-px bg-brand-lightest-navy/50 my-4"></div>
+            
+            <div className="flex items-center text-sm text-brand-slate">
+              <span>Explore our services at&nbsp;</span>
+              <a 
+                href="https://novastackltd.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-brand-teal hover:underline flex items-center group transition-colors"
+              >
+                novastackltd.com
+                <ExternalLink size={14} className="ml-1 opacity-70 group-hover:opacity-100 transition-opacity" />
+              </a>
             </div>
           </div>
         </div>
