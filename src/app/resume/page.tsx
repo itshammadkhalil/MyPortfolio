@@ -414,22 +414,137 @@ const htmlContent = `
     margin: 20px 0;
   }
 
-  /* PRINT */
+
+  /* MOBILE RESPONSIVE */
+  @media screen and (max-width: 768px) {
+    body {
+      background: #ffffff !important;
+      padding: 0;
+    }
+
+    #resume-wrapper {
+      background: #ffffff;
+    }
+
+    #resume-wrapper .page {
+      margin: 0;
+      border-radius: 0;
+      box-shadow: none;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    #resume-wrapper .header {
+      padding: 24px 20px 20px;
+    }
+
+    #resume-wrapper .header-top {
+      flex-direction: column;
+    }
+
+    #resume-wrapper .name-block h1 {
+      font-size: 24px;
+    }
+
+    #resume-wrapper .name-block .title {
+      font-size: 11px;
+    }
+
+    #resume-wrapper .tagline {
+      font-size: 12px;
+      margin-top: 12px;
+      padding-top: 12px;
+    }
+
+    #resume-wrapper .body {
+      grid-template-columns: 1fr;
+    }
+
+    #resume-wrapper .main-col {
+      padding: 20px;
+      border-right: none;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    #resume-wrapper .side-col {
+      padding: 20px;
+    }
+
+    #resume-wrapper .exp-title {
+      font-size: 13px;
+    }
+
+    #resume-wrapper .exp-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+    }
+
+    #resume-wrapper .exp-date {
+      margin-left: 0;
+      font-size: 10px;
+    }
+
+    #resume-wrapper .exp-list li {
+      font-size: 12px;
+    }
+
+    #resume-wrapper .cert-item {
+      padding: 10px 12px;
+    }
+
+    #resume-wrapper .cert-name {
+      font-size: 12px;
+    }
+
+    #resume-wrapper .cert-meta {
+      grid-template-columns: 1fr;
+      gap: 2px;
+    }
+
+    #resume-wrapper .section-title {
+      font-size: 10px;
+    }
+
+    #resume-wrapper .skill-bar-label {
+      font-size: 11px;
+    }
+
+    #resume-wrapper .tag {
+      font-size: 10px;
+      padding: 2px 7px;
+    }
+
+    /* Page 2 mobile */
+    #resume-wrapper .page[style*="margin-top"] {
+      margin-top: 10px !important;
+    }
+  }
+
   @media print {
     body { background: white !important; }
-    #resume-wrapper .page { box-shadow: none; margin: 0; border-radius: 0; }
+    #resume-wrapper .page { 
+      box-shadow: none; 
+      margin: 0; 
+      border-radius: 0;
+      max-width: 100%;
+    }
+    #resume-wrapper .body {
+      grid-template-columns: 1fr 280px;
+    }
   }
 </style>
 
 <div id="resume-wrapper">
+  <!-- HEADER -->
   <div class="page">
-    <!-- HEADER -->
     <div class="header">
       <div class="header-top">
         <div class="name-block">
           <h1>Hammad <span>Khalil.</span></h1>
           <div class="title">Founder & CEO @ NovaStack · AI & Web Architect</div>
         </div>
+
       </div>
       <div class="tagline">
         Digital entrepreneur and AI systems builder with hands-on expertise in web development, AI automation, chatbots, and calling agents. Founder of NovaStack — helping businesses scale through intelligent digital products and streamlined workflows.
@@ -632,8 +747,8 @@ const htmlContent = `
         <div class="section">
           <div class="section-title">Contact & Links</div>
           <ul class="links-list">
-            <li><a href="mailto:Hello@HammadKhalil.me"><span class="licon">✉</span>Hello@HammadKhalil.me</a></li>
-            <li><a href="https://wa.me/923393887766"><span class="licon">◎</span>+92 339 3887766</a></li>
+            <li><a href="mailto:Hello@HammadKhalil.me"><span class="licon">◉</span>Hello@HammadKhalil.me</a></li>
+            <li><a href="https://wa.me/923393887766"><span class="licon">◉</span>+92 339 3887766</a></li>
             <li><a href="https://HammadKhalil.me"><span class="licon">◉</span>HammadKhalil.me</a></li>
             <li><a href="https://github.com/itshammadkhalil"><span class="licon">◉</span>github.com/itshammadkhalil</a></li>
             <li><a href="https://linkedin.com/in/muhammad-hammad-khalil"><span class="licon">◉</span>linkedin/muhammad-hammad-khalil</a></li>
@@ -667,7 +782,7 @@ const htmlContent = `
           <div class="cert-name">Front-end Development with React V2</div>
           <div class="cert-meta" style="display:block;">
             <span class="cert-issuer">IBM · Coursera</span><br>
-            <span style="font-size:11px; color:#8892b0;">May 14, 2026 &nbsp;·&nbsp; ID: f2d2e15e-728d-49d8-9b49-a369df6be4d6</span>
+            <span style="font-size:11px; color:#8892b0;">May 14, 2026 &nbsp;·&nbsp; ID:f2d2e15e-728d-49d8-9b49-a369df6be4d6</span>
           </div>
         </div>
 
