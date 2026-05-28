@@ -23,7 +23,7 @@ A sleek, high-performance personal portfolio built to showcase my expertise as a
 ## 🔗 Links
 
 - **GitHub Repository**: [https://github.com/itshammadkhalil/MyPortfolio](https://github.com/itshammadkhalil/MyPortfolio)
-- **Live URL**: *(TBD after deploy)*
+- **Live URL**: *(https://hammadkhalil.me/)*
 
 ## 🛠️ Local Development
 
