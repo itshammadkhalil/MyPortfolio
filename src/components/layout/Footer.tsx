@@ -13,7 +13,7 @@ export default function Footer() {
     <footer className="bg-brand-light-navy py-8 mt-20 border-t border-brand-lightest-navy relative z-50">
       <div className="container mx-auto px-6 md:px-12 flex flex-col items-center">
         <p className="text-brand-slate text-sm text-center mb-4">
-          &copy; {new Date().getFullYear()} Hammad Khalil. All rights reserved.
+          &copy; 2026 Hammad Khalil. All rights reserved.
         </p>
         <div className="flex gap-4 text-xs text-brand-slate">
           <button 
