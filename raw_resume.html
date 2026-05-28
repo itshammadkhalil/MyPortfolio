@@ -1,18 +1,15 @@
-import { Metadata } from 'next';
-import DownloadButton from './DownloadButton';
-
-export const metadata: Metadata = {
-  title: 'Hammad Khalil — CV',
-};
-
-const htmlContent = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=900">
+<title>Hammad Khalil — CV</title>
 <style>
-
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
 
-#resume-wrapper * { margin: 0; padding: 0; box-sizing: border-box; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
-body, #resume-wrapper {
+  body {
     font-family: 'Inter', sans-serif;
     background: #f8f9fa;
     color: #1a1a2e;
@@ -20,7 +17,7 @@ body, #resume-wrapper {
     line-height: 1.6;
   }
 
-#resume-wrapper .page {
+  .page {
     max-width: 850px;
     margin: 30px auto;
     background: #ffffff;
@@ -30,14 +27,14 @@ body, #resume-wrapper {
   }
 
   /* HEADER */
-#resume-wrapper .header {
+  .header {
     background: #0A192F;
     padding: 44px 50px 36px;
     position: relative;
     overflow: hidden;
   }
 
-#resume-wrapper .header::before {
+  .header::before {
     content: '';
     position: absolute;
     top: -60px; right: -60px;
@@ -46,7 +43,7 @@ body, #resume-wrapper {
     background: rgba(100,255,218,0.06);
   }
 
-#resume-wrapper .header::after {
+  .header::after {
     content: '';
     position: absolute;
     bottom: -40px; left: 30%;
@@ -55,14 +52,14 @@ body, #resume-wrapper {
     background: rgba(100,255,218,0.04);
   }
 
-#resume-wrapper .header-top {
+  .header-top {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 30px;
   }
 
-#resume-wrapper .name-block h1 {
+  .name-block h1 {
     font-size: 36px;
     font-weight: 700;
     color: #CCD6F6;
@@ -70,11 +67,11 @@ body, #resume-wrapper {
     line-height: 1.1;
   }
 
-#resume-wrapper .name-block h1 span {
+  .name-block h1 span {
     color: #64FFDA;
   }
 
-#resume-wrapper .name-block .title {
+  .name-block .title {
     font-family: 'Fira Code', monospace;
     font-size: 13px;
     color: #64FFDA;
@@ -82,13 +79,13 @@ body, #resume-wrapper {
     opacity: 0.9;
   }
 
-#resume-wrapper .contact-block {
+  .contact-block {
     text-align: right;
     flex-shrink: 0;
   }
 
   .contact-block a,
-#resume-wrapper .contact-block span {
+  .contact-block span {
     display: block;
     color: #8892b0;
     font-size: 12.5px;
@@ -97,16 +94,16 @@ body, #resume-wrapper {
     transition: color 0.2s;
   }
 
-#resume-wrapper .contact-block a:hover { color: #64FFDA; }
+  .contact-block a:hover { color: #64FFDA; }
 
-#resume-wrapper .contact-block .icon {
+  .contact-block .icon {
     display: inline-block;
     width: 14px;
     margin-right: 5px;
     color: #64FFDA;
   }
 
-#resume-wrapper .tagline {
+  .tagline {
     margin-top: 18px;
     padding-top: 18px;
     border-top: 1px solid rgba(100,255,218,0.15);
@@ -117,26 +114,26 @@ body, #resume-wrapper {
   }
 
   /* BODY */
-#resume-wrapper .body {
+  .body {
     display: grid;
     grid-template-columns: 1fr 280px;
     gap: 0;
   }
 
-#resume-wrapper .main-col {
+  .main-col {
     padding: 36px 40px 40px 50px;
     border-right: 1px solid #f0f0f0;
   }
 
-#resume-wrapper .side-col {
+  .side-col {
     padding: 36px 30px 40px;
     background: #fafbfc;
   }
 
   /* SECTION */
-#resume-wrapper .section { margin-bottom: 32px; }
+  .section { margin-bottom: 32px; }
 
-#resume-wrapper .section-title {
+  .section-title {
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
@@ -150,7 +147,7 @@ body, #resume-wrapper {
   }
 
   /* EXPERIENCE ITEM */
-#resume-wrapper .exp-item {
+  .exp-item {
     margin-bottom: 22px;
     padding-bottom: 22px;
     border-bottom: 1px solid #f0f0f0;
@@ -158,7 +155,7 @@ body, #resume-wrapper {
     padding-left: 16px;
   }
 
-#resume-wrapper .exp-item::before {
+  .exp-item::before {
     content: '';
     position: absolute;
     left: 0; top: 6px;
@@ -167,26 +164,26 @@ body, #resume-wrapper {
     border-radius: 2px;
   }
 
-#resume-wrapper .exp-item:last-child {
+  .exp-item:last-child {
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
   }
 
-#resume-wrapper .exp-header {
+  .exp-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 4px;
   }
 
-#resume-wrapper .exp-title {
+  .exp-title {
     font-size: 15px;
     font-weight: 600;
     color: #1a1a2e;
   }
 
-#resume-wrapper .exp-date {
+  .exp-date {
     font-family: 'Fira Code', monospace;
     font-size: 11px;
     color: #0A192F;
@@ -200,7 +197,7 @@ body, #resume-wrapper {
     font-weight: 600;
   }
 
-#resume-wrapper .exp-company {
+  .exp-company {
     font-size: 12.5px;
     color: #0A192F;
     font-weight: 500;
@@ -208,7 +205,7 @@ body, #resume-wrapper {
     opacity: 0.7;
   }
 
-#resume-wrapper .exp-company .badge {
+  .exp-company .badge {
     display: inline-block;
     background: rgba(10,25,47,0.07);
     font-size: 10px;
@@ -220,12 +217,12 @@ body, #resume-wrapper {
     opacity: 1;
   }
 
-#resume-wrapper .exp-list {
+  .exp-list {
     list-style: none;
     padding: 0;
   }
 
-#resume-wrapper .exp-list li {
+  .exp-list li {
     font-size: 13px;
     color: #4a4a6a;
     margin-bottom: 5px;
@@ -234,7 +231,7 @@ body, #resume-wrapper {
     line-height: 1.55;
   }
 
-#resume-wrapper .exp-list li::before {
+  .exp-list li::before {
     content: '▸';
     position: absolute;
     left: 0;
@@ -244,7 +241,7 @@ body, #resume-wrapper {
   }
 
   /* CERT ITEM */
-#resume-wrapper .cert-item {
+  .cert-item {
     margin-bottom: 14px;
     padding: 12px 14px;
     background: #fff;
@@ -253,7 +250,7 @@ body, #resume-wrapper {
     border-left: 3px solid #64FFDA;
   }
 
-#resume-wrapper .cert-name {
+  .cert-name {
     font-size: 12.5px;
     font-weight: 600;
     color: #1a1a2e;
@@ -261,7 +258,7 @@ body, #resume-wrapper {
     line-height: 1.4;
   }
 
-#resume-wrapper .cert-meta {
+  .cert-meta {
     font-size: 11px;
     color: #8892b0;
     display: grid;
@@ -271,9 +268,9 @@ body, #resume-wrapper {
     margin-top: 4px;
   }
 
-#resume-wrapper .cert-issuer { color: #0A192F; font-weight: 500; }
+  .cert-issuer { color: #0A192F; font-weight: 500; }
 
-#resume-wrapper .cert-grade {
+  .cert-grade {
     font-family: 'Fira Code', monospace;
     color: #0A192F;
     background: rgba(100,255,218,0.3);
@@ -284,9 +281,9 @@ body, #resume-wrapper {
   }
 
   /* SKILLS */
-#resume-wrapper .skill-group { margin-bottom: 16px; }
+  .skill-group { margin-bottom: 16px; }
 
-#resume-wrapper .skill-group-title {
+  .skill-group-title {
     font-size: 11px;
     font-weight: 600;
     color: #0A192F;
@@ -296,11 +293,11 @@ body, #resume-wrapper {
     opacity: 0.6;
   }
 
-#resume-wrapper .skill-bar-wrap {
+  .skill-bar-wrap {
     margin-bottom: 7px;
   }
 
-#resume-wrapper .skill-bar-label {
+  .skill-bar-label {
     display: flex;
     justify-content: space-between;
     font-size: 12px;
@@ -308,30 +305,30 @@ body, #resume-wrapper {
     margin-bottom: 3px;
   }
 
-#resume-wrapper .skill-bar-label span:last-child {
+  .skill-bar-label span:last-child {
     font-family: 'Fira Code', monospace;
     font-size: 10px;
     color: #0A192F;
     font-weight: 700;
   }
 
-#resume-wrapper .skill-bar-track {
+  .skill-bar-track {
     height: 4px;
     background: #eef0f3;
     border-radius: 2px;
     overflow: hidden;
   }
 
-#resume-wrapper .skill-bar-fill {
+  .skill-bar-fill {
     height: 100%;
     background: linear-gradient(to right, #64FFDA, #0A192F);
     border-radius: 2px;
   }
 
   /* TAGS */
-#resume-wrapper .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
 
-#resume-wrapper .tag {
+  .tag {
     font-size: 11px;
     padding: 3px 9px;
     background: rgba(10,25,47,0.06);
@@ -342,7 +339,7 @@ body, #resume-wrapper {
   }
 
   /* EDUCATION */
-#resume-wrapper .edu-item {
+  .edu-item {
     padding: 12px 14px;
     background: #fff;
     border-radius: 6px;
@@ -351,26 +348,26 @@ body, #resume-wrapper {
     margin-bottom: 10px;
   }
 
-#resume-wrapper .edu-degree {
+  .edu-degree {
     font-size: 13px;
     font-weight: 600;
     color: #1a1a2e;
     margin-bottom: 2px;
   }
 
-#resume-wrapper .edu-school {
+  .edu-school {
     font-size: 12px;
     color: #8892b0;
     margin-bottom: 4px;
   }
 
-#resume-wrapper .edu-meta {
+  .edu-meta {
     display: flex;
     gap: 10px;
     font-size: 11px;
   }
 
-#resume-wrapper .edu-meta span {
+  .edu-meta span {
     font-family: 'Fira Code', monospace;
     color: #0A192F;
     background: rgba(100,255,218,0.25);
@@ -380,14 +377,14 @@ body, #resume-wrapper {
   }
 
   /* LINKS */
-#resume-wrapper .links-list { list-style: none; }
+  .links-list { list-style: none; }
 
-#resume-wrapper .links-list li {
+  .links-list li {
     margin-bottom: 8px;
     font-size: 12.5px;
   }
 
-#resume-wrapper .links-list a {
+  .links-list a {
     color: #0A192F;
     text-decoration: none;
     display: flex;
@@ -396,14 +393,14 @@ body, #resume-wrapper {
     word-break: break-all;
   }
 
-#resume-wrapper .links-list .licon {
+  .links-list .licon {
     color: #64FFDA;
     font-size: 13px;
     flex-shrink: 0;
   }
 
   /* DIVIDER */
-#resume-wrapper hr.side-div {
+  hr.side-div {
     border: none;
     border-top: 1px solid #eef0f3;
     margin: 20px 0;
@@ -412,12 +409,12 @@ body, #resume-wrapper {
 
   /* MOBILE RESPONSIVE */
   @media screen and (max-width: 768px) {
-body, #resume-wrapper {
+    body {
       background: #ffffff;
       padding: 0;
     }
 
-#resume-wrapper .page {
+    .page {
       margin: 0;
       border-radius: 0;
       box-shadow: none;
@@ -426,149 +423,148 @@ body, #resume-wrapper {
       overflow-x: hidden;
     }
 
-#resume-wrapper .header {
+    .header {
       padding: 24px 16px 20px;
     }
 
-#resume-wrapper .header-top {
+    .header-top {
       flex-direction: column;
       gap: 14px;
     }
 
-#resume-wrapper .name-block h1 {
+    .name-block h1 {
       font-size: 24px;
     }
 
-#resume-wrapper .name-block .title {
+    .name-block .title {
       font-size: 11px;
     }
 
     /* Contact block: left-align on mobile, remove fixed shrink */
-#resume-wrapper .contact-block {
+    .contact-block {
       text-align: left;
       flex-shrink: unset;
       width: 100%;
     }
 
     .contact-block a,
-#resume-wrapper .contact-block span {
+    .contact-block span {
       font-size: 12px;
     }
 
-#resume-wrapper .tagline {
+    .tagline {
       font-size: 12px;
       margin-top: 12px;
       padding-top: 12px;
       max-width: 100%;
     }
 
-#resume-wrapper .body {
+    .body {
       grid-template-columns: 1fr;
     }
 
-#resume-wrapper .main-col {
+    .main-col {
       padding: 20px 16px;
       border-right: none;
       border-bottom: 1px solid #f0f0f0;
     }
 
-#resume-wrapper .side-col {
+    .side-col {
       padding: 20px 16px;
     }
 
-#resume-wrapper .exp-title {
+    .exp-title {
       font-size: 13px;
     }
 
-#resume-wrapper .exp-header {
+    .exp-header {
       flex-direction: column;
       align-items: flex-start;
       gap: 4px;
     }
 
-#resume-wrapper .exp-date {
+    .exp-date {
       margin-left: 0;
       font-size: 10px;
     }
 
-#resume-wrapper .exp-list li {
+    .exp-list li {
       font-size: 12px;
     }
 
-#resume-wrapper .cert-item {
+    .cert-item {
       padding: 10px 12px;
     }
 
-#resume-wrapper .cert-name {
+    .cert-name {
       font-size: 12px;
     }
 
-#resume-wrapper .cert-meta {
+    .cert-meta {
       grid-template-columns: 1fr;
       gap: 2px;
     }
 
-#resume-wrapper .section-title {
+    .section-title {
       font-size: 10px;
     }
 
-#resume-wrapper .skill-bar-label {
+    .skill-bar-label {
       font-size: 11px;
     }
 
-#resume-wrapper .tag {
+    .tag {
       font-size: 10px;
       padding: 2px 7px;
     }
 
     /* Page 2 mobile — override inline styles */
-#resume-wrapper .page {
+    .page {
       margin-top: 0 !important;
     }
 
     .page .header,
-#resume-wrapper .page > div[style*="padding"] {
+    .page > div[style*="padding"] {
       padding: 20px 16px !important;
     }
 
     /* Page 2 header flex */
     .page .header > div[style*="display:flex"],
-#resume-wrapper .page .header > div[style*="display: flex"] {
+    .page .header > div[style*="display: flex"] {
       flex-direction: column;
       gap: 6px;
       align-items: flex-start !important;
     }
 
     /* Page 2 content area */
-#resume-wrapper .page2-content {
+    .page2-content {
       padding: 20px 16px !important;
     }
 
     /* Page 2 cert grid: stack to single column */
     div[style*="grid-template-columns:1fr 1fr"],
-#resume-wrapper div[style*="grid-template-columns: 1fr 1fr"] {
+    div[style*="grid-template-columns: 1fr 1fr"] {
       display: grid !important;
       grid-template-columns: 1fr !important;
     }
   }
 
   @media print {
-body, #resume-wrapper { background: white; }
-#resume-wrapper .page { 
+    body { background: white; }
+    .page { 
       box-shadow: none; 
       margin: 0; 
       border-radius: 0;
       max-width: 100%;
     }
-#resume-wrapper .body {
+    .body {
       grid-template-columns: 1fr 280px;
     }
   }
 
-
 </style>
-
-<div id="resume-wrapper">
+</head>
+<body>
 <div class="page">
 
   <!-- HEADER -->
@@ -885,17 +881,5 @@ body, #resume-wrapper { background: white; }
 
     </div>
   </div>
-</div>
-`;
-
-export default function ResumePage() {
-  return (
-    <>
-      <DownloadButton />
-      <div 
-        id="resume-root" 
-        dangerouslySetInnerHTML={{ __html: htmlContent }} 
-      />
-    </>
-  );
-}
+</body>
+</html>

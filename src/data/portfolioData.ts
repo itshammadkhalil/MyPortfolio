@@ -88,7 +88,7 @@ export const portfolioData = {
       platform: "Coursera",
       date: "May 14, 2026",
       badge: "Credly",
-      credentialId: "f2d2e15e-728d-49d8-9b49-a369df6be4d6",
+      credentialId: "PWID-B0944700",
       url: "https://credly.com/badges/f2d2e15e-728d-49d8-9b49-a369df6be4d6/linked_in_profile",
       category: "Web Development"
     },
@@ -118,7 +118,7 @@ export const portfolioData = {
       platform: "Coursera",
       date: "May 20, 2026",
       badge: "Credly",
-      credentialId: "fe15c63e-f0e5-46ef-8306-09af4fe88c39",
+      credentialId: "PWID-B1017300",
       url: "https://www.credly.com/go/oHr447OW",
       category: "AI & Automation"
     },
@@ -159,6 +159,26 @@ export const portfolioData = {
       credentialId: "DXCID4OY1SRG",
       url: "https://coursera.org/verify/DXCID4OY1SRG",
       category: "AI & Automation"
+    },
+    {
+      name: "Python for Data Science, AI & Development",
+      issuer: "IBM",
+      platform: "Coursera",
+      date: "May 28, 2026",
+      grade: "95.75%",
+      credentialId: "AGCWBLLQPR1M",
+      url: "https://coursera.org/verify/AGCWBLLQPR1M",
+      category: "Python & Data"
+    },
+    {
+      name: "Python for Data Science and AI",
+      issuer: "IBM",
+      platform: "Credly",
+      date: "May 28, 2026",
+      badge: "Credly",
+      credentialId: "PWID-B0394900",
+      url: "https://credly.com/earner/earned/badge/7b9e71f6-9d17-4cf3-ac9d-62b73664e8d3",
+      category: "Python & Data"
     }
   ],
   projects: [
