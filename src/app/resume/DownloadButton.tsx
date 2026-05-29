@@ -14,12 +14,18 @@ export default function DownloadButton() {
   };
 
   return (
-    <button
-      onClick={handleDownload}
-      className="fixed top-6 right-6 z-50 flex items-center gap-2 bg-[#64FFDA] text-[#0A192F] font-semibold py-2 px-4 rounded-lg shadow-lg hover:bg-[#64FFDA]/90 hover:-translate-y-1 transition-all"
-    >
-      <Download size={18} />
-      Download CV
-    </button>
+    <div className="fixed top-6 right-6 z-50 group flex flex-col items-end">
+      <button
+        onClick={handleDownload}
+        className="flex items-center justify-center w-[44px] h-[44px] bg-[#64FFDA] text-[#0A192F] rounded-full shadow-[0_4px_14px_rgba(100,255,218,0.25)] hover:scale-110 transition-all duration-300"
+        aria-label="Download CV"
+      >
+        <Download size={20} strokeWidth={2.5} />
+      </button>
+      {/* Tooltip */}
+      <span className="absolute top-[52px] right-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#0A192F] text-[#64FFDA] text-xs font-medium py-1.5 px-3 rounded whitespace-nowrap shadow-xl border border-[#64FFDA]/20 pointer-events-none">
+        Download CV
+      </span>
+    </div>
   );
 }
