@@ -85,14 +85,6 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <a
-            href="/resume"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 rounded border border-brand-teal text-brand-teal text-sm font-medium hover:bg-brand-teal/10 transition-colors"
-          >
-            Resume
-          </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -124,14 +116,6 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <a
-            href="/resume"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-2 rounded border border-brand-teal text-brand-teal font-medium hover:bg-brand-teal/10 transition-colors"
-          >
-            Resume
-          </a>
         </motion.div>
       )}
     </header>
