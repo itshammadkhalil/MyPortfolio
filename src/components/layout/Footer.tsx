@@ -12,14 +12,7 @@ export default function Footer() {
   return (
     <footer className="bg-brand-light-navy py-8 mt-20 border-t border-brand-lightest-navy relative z-50">
       <div className="container mx-auto px-6 md:px-12 flex flex-col items-center">
-        <a
-          href="/resume"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mb-8 px-8 py-2.5 rounded-lg border border-brand-teal text-brand-teal font-medium hover:bg-brand-teal hover:text-brand-navy transition-colors"
-        >
-          View Resume
-        </a>
+
         <p className="text-brand-slate text-sm text-center mb-4">
           &copy; 2026 Hammad Khalil. All rights reserved.
         </p>

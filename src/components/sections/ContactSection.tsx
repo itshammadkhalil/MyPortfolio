@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { portfolioData } from "@/data/portfolioData";
-import { MapPin, Mail, Send, Loader2 } from "lucide-react";
+import { MapPin, Mail, Send, Loader2, FileText } from "lucide-react";
 import { FaWhatsapp as Whatsapp, FaLinkedin as Linkedin, FaGithub as Github, FaInstagram as Instagram } from "react-icons/fa";
 
 export default function ContactSection() {
@@ -103,6 +103,14 @@ export default function ContactSection() {
               <a href="https://www.instagram.com/hammadkhalil.me" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-brand-teal flex items-center justify-center text-brand-teal hover:bg-brand-teal hover:text-brand-navy transition-all">
                 <Instagram size={18} />
               </a>
+              <div className="relative group">
+                <a href="/resume" target="_blank" rel="noopener noreferrer" aria-label="View Resume" className="w-10 h-10 rounded-full border border-brand-teal flex items-center justify-center text-brand-teal hover:bg-brand-teal hover:text-brand-navy transition-all">
+                  <FileText size={18} />
+                </a>
+                <span className="absolute -top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-brand-navy text-brand-teal text-xs font-medium py-1 px-2 rounded whitespace-nowrap shadow-xl border border-brand-teal/20 pointer-events-none">
+                  View Resume
+                </span>
+              </div>
             </div>
           </div>
 
