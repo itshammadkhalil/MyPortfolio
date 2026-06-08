@@ -85,7 +85,7 @@ export const portfolioData = {
     {
       name: "Front-end Development with React V2",
       issuer: "IBM",
-      platform: "Coursera",
+      platform: "Credly",
       date: "May 14, 2026",
       badge: "Credly",
       credentialId: "PWID-B0944700",
@@ -115,7 +115,7 @@ export const portfolioData = {
     {
       name: "Fundamentals of Building AI Agents",
       issuer: "IBM",
-      platform: "Coursera",
+      platform: "Credly",
       date: "May 20, 2026",
       badge: "Credly",
       credentialId: "PWID-B1017300",
@@ -147,6 +147,7 @@ export const portfolioData = {
       issuer: "Board Infinity",
       platform: "Coursera",
       date: "May 24, 2026",
+      grade: "98.68%",
       credentialId: "1PJ4OSBQSQPD",
       url: "https://coursera.org/verify/1PJ4OSBQSQPD",
       category: "AI & Automation"
@@ -156,6 +157,7 @@ export const portfolioData = {
       issuer: "Coursera",
       platform: "Coursera",
       date: "May 25, 2026",
+      grade: "98.80%",
       credentialId: "DXCID4OY1SRG",
       url: "https://coursera.org/verify/DXCID4OY1SRG",
       category: "AI & Automation"
