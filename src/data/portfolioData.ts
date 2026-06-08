@@ -179,6 +179,26 @@ export const portfolioData = {
       credentialId: "PWID-B0394900",
       url: "https://credly.com/earner/earned/badge/7b9e71f6-9d17-4cf3-ac9d-62b73664e8d3",
       category: "Python & Data"
+    },
+    {
+      name: "Vector Databases for RAG: An Introduction",
+      issuer: "IBM",
+      platform: "Coursera",
+      date: "June 08, 2026",
+      grade: "100%",
+      credentialId: "OA0UZHEV3EMZ",
+      url: "https://coursera.org/verify/OA0UZHEV3EMZ",
+      category: "AI & Automation"
+    },
+    {
+      name: "Vector Databases for RAG",
+      issuer: "IBM",
+      platform: "Credly",
+      date: "June 08, 2026",
+      badge: "Credly",
+      credentialId: "PWID-B1019500",
+      url: "https://www.credly.com/go/TMtU7RV8xS7yN0x6ozl5AA",
+      category: "AI & Automation"
     }
   ],
   projects: [
