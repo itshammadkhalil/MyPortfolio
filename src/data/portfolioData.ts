@@ -201,6 +201,36 @@ export const portfolioData = {
       credentialId: "PWID-B1019500",
       url: "https://www.credly.com/go/TMtU7RV8xS7yN0x6ozl5AA",
       category: "AI & Automation"
+    },
+    {
+      name: "AI for App Building",
+      issuer: "Google",
+      platform: "Coursera",
+      date: "June 10, 2026",
+      grade: "100%",
+      credentialId: "DHEC7ATYKVYK",
+      url: "https://coursera.org/verify/DHEC7ATYKVYK",
+      category: "AI & Automation"
+    },
+    {
+      name: "Build Generative AI Agents with Vertex AI and Flutter",
+      issuer: "Google Cloud",
+      platform: "Coursera",
+      date: "June 10, 2026",
+      grade: "94%",
+      credentialId: "H6TVOWN36O6T",
+      url: "https://www.credly.com/go/H6TVOWN36O6T",
+      category: "AI & Automation"
+    },
+    {
+      name: "Google AI for App Building",
+      issuer: "Google",
+      platform: "Credly",
+      date: "June 10, 2026",
+      badge: "Credly",
+      credentialId: "fb39b289-d52f-4485-94a7-d7edb02d12a2",
+      url: "https://www.credly.com/go/Ul4o7vS44yBPaGVQjDxXcA",
+      category: "AI & Automation"
     }
   ],
   projects: [
